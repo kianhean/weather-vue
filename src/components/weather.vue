@@ -30,7 +30,7 @@
   
     methods: {
   
-      getContacts() {
+      getWeather() {
         apiService.getData().then((data) => {
           this.info = data;
         });
@@ -38,7 +38,7 @@
     },
   
     mounted() {
-      this.getContacts();
+      this.getWeather();
     },
   }
 </script>
